@@ -1,0 +1,82 @@
+{
+  "products": [
+    {
+      "name": "redbull",
+      "unit_price": 5000,
+      "img": "https://www.shutterstock.com/image-photo/klangmalaysia-circa-may-2020-picture-260nw-1726155472.jpg",
+      "stock": 15
+    },
+    {
+      "name": "coca cola",
+      "unit_price": 20000,
+      "img": "https://cdn.shopify.com/s/files/1/0492/2458/1274/products/supermercados_la_vaquita_supervaquita_gaseosa_coca_cola_3l_nr_bebidas_liquidas_3df7d9f6-ab5c-4638-8cf3-2bb50b76491e_700x700.jpg?v=1620489381",
+      "stock": 0
+    },
+    {
+      "name": "canada dry",
+      "unit_price": 500,
+      "img": "https://media.nidux.net/pull/700/700/13407/3558-product-6013095a3c971-050102-1.jpg",
+      "stock": 18
+    },
+    {
+      "name": "milk",
+      "unit_price": 15000,
+      "img": "https://as1.ftcdn.net/v2/jpg/01/06/68/88/1000_F_106688812_rVoRFXazgIMEUJdvffG9p0XvP8Lntf0a.jpg",
+      "stock": 10
+    },
+    {
+      "name": "nesquik",
+      "unit_price": 18000,
+      "img": "https://www.goodnes.com/sites/g/files/jgfbjl321/files/styles/gdn_hero_pdp_product_image/public/gdn_product/field_product_images/nesquik-hohbqjdajf8qiyziuil2.png.webp?itok=80AwzfaY",
+      "stock": 22
+    },
+    {
+      "name": "intense",
+      "unit_price": 3200,
+      "img": "https://cdn.shopify.com/s/files/1/1188/2592/products/1100x1100product.jpg?v=1669887524",
+      "stock": 23
+    },
+    {
+      "name": "organic chocolate",
+      "unit_price": 19000,
+      "img": "https://d10ui928gx5i4g.cloudfront.net/media/cache/9a/7e/9a7efb1faaded52865d39edb8d7c4eef.jpg",
+      "stock": 50
+    },
+    {
+      "name": "trumoo",
+      "unit_price": 12000,
+      "img": "https://d1906a8c873b5d638f11-66fd139e67371687450909048768944b.ssl.cf2.rackcdn.com/0041900073100_CR_default_default_large.jpeg",
+      "stock": 1
+    },
+    {
+      "name": "colmans",
+      "unit_price": 5300,
+      "img": "https://c8.alamy.com/compes/b79fa7/mostaza-inglesa-colmans-norwich-b79fa7.jpg",
+      "stock": 10
+    },
+    {
+      "name": "intense",
+      "unit_price": 3200,
+      "img": "https://cdn.shopify.com/s/files/1/1188/2592/products/1100x1100product.jpg?v=1669887524",
+      "stock": 23
+    },
+    {
+      "name": "organic chocolate",
+      "unit_price": 19000,
+      "img": "https://d10ui928gx5i4g.cloudfront.net/media/cache/9a/7e/9a7efb1faaded52865d39edb8d7c4eef.jpg",
+      "stock": 50
+    },
+    {
+      "name": "trumoo",
+      "unit_price": 12000,
+      "img": "https://d1906a8c873b5d638f11-66fd139e67371687450909048768944b.ssl.cf2.rackcdn.com/0041900073100_CR_default_default_large.jpeg",
+      "stock": 1
+    },
+    {
+      "name": "colmans",
+      "unit_price": 5300,
+      "img": "https://c8.alamy.com/compes/b79fa7/mostaza-inglesa-colmans-norwich-b79fa7.jpg",
+      "stock": 10
+    }
+  ]
+}

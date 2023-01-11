@@ -1,0 +1,59 @@
+<div class="card rounded shadow border-0 m-1">
+  <div class="position-relative">
+    <span
+      class="p-2 bg-info-subtle rounded-1 fw-semibold text-muted font-italic content-stock"
+    >
+      Stock {{ product.stock }}
+    </span>
+  </div>
+  <img [src]="product.img" [alt]="product.name" />
+  <div class="card-body">
+    <div class="row">
+      <h5 class="text-dark text-capitalize d-inline-block text-truncate">
+        {{ product.name }}
+      </h5>
+      <h5 class="text-muted font-italic">
+        <strong>$ </strong>
+        {{ product.unit_price }}
+      </h5>
+    </div>
+
+    <div
+      class="row justify-content-center align-content-center align-items-center"
+    >
+      <form
+        name="form"
+        autocomplete="off"
+        (ngSubmit)="onSubmit(form, product)"
+        #form="ngForm"
+      >
+        <div class="row g-2">
+          <div class="col-12 col-sm-6">
+            <input
+              id="quantity"
+              name="quantity"
+              type="number"
+              class="form-control w-100 text-center w-full"
+              min="1"
+              required
+              [(ngModel)]="quantityProduct"
+              #quantity="ngModel"
+            />
+
+            <small
+              class="text-danger"
+              *ngIf="!quantity.valid && form.submitted && !addSucess"
+            >
+              {{ validateFormControl(form.controls["quantity"]) }}</small
+            >
+          </div>
+          <div class="col-12 col-sm-6">
+            <button class="btn btn-outline-primary w-100" type="submit">
+              Add
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

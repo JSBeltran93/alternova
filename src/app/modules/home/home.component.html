@@ -1,0 +1,62 @@
+<div>
+  <app-card-promotion></app-card-promotion>
+  <div class="row justify-content-center pb-3 mt-3">
+    <div
+      [class]="
+        shopService.shoppingToCart.items &&
+        shopService.shoppingToCart.items.length > 0
+          ? 'col-12 col-md-8'
+          : 'col-12'
+      "
+    >
+      <div class="row g-3">
+        <div
+          [class]="
+            shopService.shoppingToCart.items &&
+            shopService.shoppingToCart.items.length > 0
+              ? 'col-lg-4'
+              : 'col-lg-3 col-xl-2'
+          "
+          class="col-12 col-sm-6 mb-lg-4"
+          *ngFor="let product of products"
+        >
+          <app-product-card [product]="product"></app-product-card>
+        </div>
+      </div>
+    </div>
+    <div
+      class="col-12 col-md-4"
+      *ngIf="
+        shopService.shoppingToCart.items &&
+        shopService.shoppingToCart.items.length > 0
+      "
+    >
+      <div class="card shadow border-0">
+        <div class="card-body">
+          <h5 class="card-title">Cart</h5>
+          <app-table-product-to-cart
+            [items]="shopService.shoppingToCart.items || []"
+          ></app-table-product-to-cart>
+
+          <div class="row align-items-center">
+            <div class="col">
+              <span>
+                Total Order Price
+                <strong> ${{ shopService.totalOrderPrice }}</strong>
+              </span>
+            </div>
+            <div class="col">
+              <button
+                class="btn btn-primary w-100"
+                type="button"
+                (click)="createOrder()"
+              >
+                Create Order
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
