@@ -53,30 +53,6 @@
       "unit_price": 5300,
       "img": "https://c8.alamy.com/compes/b79fa7/mostaza-inglesa-colmans-norwich-b79fa7.jpg",
       "stock": 10
-    },
-    {
-      "name": "intense",
-      "unit_price": 3200,
-      "img": "https://cdn.shopify.com/s/files/1/1188/2592/products/1100x1100product.jpg?v=1669887524",
-      "stock": 23
-    },
-    {
-      "name": "organic chocolate",
-      "unit_price": 19000,
-      "img": "https://d10ui928gx5i4g.cloudfront.net/media/cache/9a/7e/9a7efb1faaded52865d39edb8d7c4eef.jpg",
-      "stock": 50
-    },
-    {
-      "name": "trumoo",
-      "unit_price": 12000,
-      "img": "https://d1906a8c873b5d638f11-66fd139e67371687450909048768944b.ssl.cf2.rackcdn.com/0041900073100_CR_default_default_large.jpeg",
-      "stock": 1
-    },
-    {
-      "name": "colmans",
-      "unit_price": 5300,
-      "img": "https://c8.alamy.com/compes/b79fa7/mostaza-inglesa-colmans-norwich-b79fa7.jpg",
-      "stock": 10
     }
   ]
 }

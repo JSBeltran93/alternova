@@ -80,9 +80,9 @@ export class ProductCardComponent {
   }
 
   updateValuesLocalStore() {
-    const oldShop = this.shopService.shoppingToCart;
     this.shopService.removeShoppingLocaleStore();
   }
+
   validateFormControl(formControl: AbstractControl) {
     let invalidMessage: string = '';
     if (formControl && formControl.status === 'INVALID' && formControl.errors) {

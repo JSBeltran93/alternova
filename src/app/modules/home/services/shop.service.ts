@@ -42,28 +42,17 @@ export class ShopService {
       .pipe(catchError((err) => throwError(() => err)));
   }
 
-  /**
-   *
-   * @returns listado de productos almacenados en el carrito de compras
-   */
-  getShoppingCart() {
-    const url = './assets/shopping_cart.json';
-    return this.httpClient
-      .get<ShoppingToCart>(url)
-      .pipe(catchError((err) => throwError(() => err)));
-  }
-
   createOrderInLocaleStore(shopping: ShoppingToCart) {
     localStorage.setItem('shopping_cart', JSON.stringify(shopping));
 
-    // const jsonString = `data:text/json;chatset=utf-8,${encodeURIComponent(
-    //   JSON.stringify(shopping)
-    // )}`;
-    // const link = document.createElement('a');
-    // link.href = jsonString;
-    // link.download = 'shop.json';
+    const jsonString = `data:text/json;chatset=utf-8,${encodeURIComponent(
+      JSON.stringify(shopping)
+    )}`;
+    const link = document.createElement('a');
+    link.href = jsonString;
+    link.download = 'shop.json';
 
-    // link.click();
+    link.click();
   }
 
   getShoppingLocaleStore() {
