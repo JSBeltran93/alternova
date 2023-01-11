@@ -31,6 +31,13 @@ export class ProductCardComponent {
           this.addOrUpdateToCart(product);
           this.quantityProduct = undefined;
           this.addSucess = true;
+          Swal.fire({
+            position: 'top-end',
+            icon: 'success',
+            title: 'Product added successfully',
+            showConfirmButton: false,
+            timer: 1200,
+          });
         } else {
           Swal.fire('Upss!', 'This amount is not available!', 'error');
         }
